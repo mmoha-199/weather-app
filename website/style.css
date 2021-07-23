@@ -27,6 +27,7 @@ header{
     display: flex;
     flex-direction: column;
     margin: 0;   
+    background-color: rgb(241, 139, 44);
 }
 
 main{
@@ -35,6 +36,7 @@ main{
     display: grid;
     justify-content: center;
     justify-items: center;   
+    background: linear-gradient(#f69d3c,#ebf8e1,#3f87a6);
 }
 footer{
     grid-area: but;
@@ -43,9 +45,7 @@ footer{
 }
 
 nav{
-    position: fixed;
-    top: 0;
+    display: flex;
+    flex-direction: row;
     width: 100vw;
-    z-index: 1;
-    transition: top 0.3s;
 }
