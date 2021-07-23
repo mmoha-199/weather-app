@@ -60,20 +60,25 @@ nav{
     display: flex;
     flex-direction: row;
     padding: 5px;
+    margin-left: 5px;
     font-size: 1.2em;
     
 }
 .continent i, .continent a{
-    padding: 5px;
-    padding-top: 7px;
+    padding: 2px;
+    margin: 2px;
+    padding-top: 2px;
+}
+.continent i:first-of-type{
+    display: none;
 }
 .navform{
     width: 65vw;
 }
 .navform input{
-    width: 85%;
-    font-size: 1em;
-    padding: 15px;
+    width: 95%;
+    font-size: 1.1em;
+    padding: 5px;
     position: relative;
     outline: none;
     border-radius: 5px;
@@ -82,8 +87,8 @@ nav{
 .navform i{
     position: absolute;
     z-index: 2;
-    left: 55%;
-    padding-top: 15px ;
+    left: 60%;
+    top: 9%;
     
     color: rgba(100, 99, 99, 0.76);
 }
@@ -125,7 +130,7 @@ nav{
 }
 .card{
     display: flex; 
-    width: 100vw;
+    width: 94vw;
     border: none;
     padding: 5px;
     margin: 10px 5px;
@@ -155,6 +160,7 @@ nav{
 .tod{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    text-align: center;
+    width: 33.33%;
 
 }
