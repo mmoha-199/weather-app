@@ -40,7 +40,7 @@ main{
     justify-content: center;
     justify-items: center;   
     background: linear-gradient(#f69d3c,#ebf8e1,#3f87a6);
-    padding-top: 20px;
+    
 }
 footer{
     grid-area: but;
@@ -83,5 +83,17 @@ nav{
 
 .v-divider:first-of-type{
     border-left: 1px solid white;
-    height: inherit;
+    height: 70%;
+}
+.period{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    background-color: rgb(243, 121, 8);
+    text-align: center;
+}
+.period a {
+    padding: 15px;
+    font-size: 1.2em;
+    text-transform: capitalize;
 }
