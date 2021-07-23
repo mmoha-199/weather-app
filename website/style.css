@@ -1,12 +1,15 @@
 body{
     box-sizing: border-box;
     z-index: -1;
+    color: white;
   
     font-size: 16px;
     margin: 0;
 }
 body a, body i, body button{
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 body i:hover{
     color: rgb(223, 151, 126);
@@ -37,6 +40,7 @@ main{
     justify-content: center;
     justify-items: center;   
     background: linear-gradient(#f69d3c,#ebf8e1,#3f87a6);
+    padding-top: 20px;
 }
 footer{
     grid-area: but;
@@ -48,4 +52,36 @@ nav{
     display: flex;
     flex-direction: row;
     width: 100vw;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.continent{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    font-size: 1.2em;
+    
+}
+.continent i, .continent a{
+    padding: 3px;
+}
+.navform input{
+    padding: 15px;
+    position: relative;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.navform i{
+    position: absolute;
+    z-index: 2;
+    left: 55%;
+    padding-top: 15px ;
+    
+    color: rgba(100, 99, 99, 0.76);
+}
+
+.v-divider:first-of-type{
+    border-left: 1px solid white;
+    height: inherit;
 }
