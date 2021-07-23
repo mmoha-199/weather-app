@@ -1,0 +1,51 @@
+body{
+    box-sizing: border-box;
+    z-index: -1;
+  
+    font-size: 16px;
+    margin: 0;
+}
+body a, body i, body button{
+    cursor: pointer;
+}
+body i:hover{
+    color: rgb(223, 151, 126);
+}
+.container{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: 
+    "top"
+    "mid"
+    "but";
+}
+header{
+    grid-area: top;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0;   
+}
+
+main{
+    grid-area: mid;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    justify-items: center;   
+}
+footer{
+    grid-area: but;
+    width: 100vw;
+    margin: 0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+    transition: top 0.3s;
+}
