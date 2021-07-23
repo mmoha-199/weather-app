@@ -12,82 +12,85 @@
     <title>weather-app</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>check weather now <i class="fas fa-cloud-sun"></i></h1>
-        </div>
-        <nav>
-            <form action="get" class="navform">
-                <input type="text" placeholder="search City or Postcode">
-                <i class="fas fa-search"></i>
-            </form>
-            <div class="continent">
-                <i class="fas fa-globe-africa"></i>
-                <a href="">GB</a>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h2>check weather now <i class="fas fa-cloud-sun"></i></h2>
+            </div>
+            <nav>
+                <form action="get" class="navform">
+                    <input type="text" placeholder="search City or Postcode">
+                    <i class="fas fa-search"></i>
+                </form>
+                <div class="continent">
+                    <i class="fas fa-globe-africa"></i>
+                    <a href="">GB</a>
+                    <div class="v-divider"></div>
+                    <a href="" class="ForC">C&#176;</a>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="current-city">
+                <a href=""> 22&#176; Galashiels, Scotland</a>
                 <div class="v-divider"></div>
-                <a href="" class="ForC">C&#176;</a>
-                <i class="fas fa-caret-down"></i>
             </div>
-        </nav>
-    </header>
-    <main>
-        <div class="current-city">
-            <a href=""> 22&#176; Galashiels, Scotland</a>
-            <div class="v-divider"></div>
-        </div>
-        <div class="period">
-            <a href="">today</a>
-            <a href="">hourly</a>
-            <a href="">10 days</a>
-            <a href="">weekend</a>
-            <a href="">monthly</a>
-            <a href="">radar</a>
-        </div>
-        <div class="cards">
-            <div class="city card">
-                <div class="basic-inf">
-                    <h2>city name</h2>
-                    <a href="">bst</a>
-                    <a href="" class="degre">19</a>
-                    <a href="">partly cloudy</a>
-                    <a href="">1% chance of rain until 13:00</a>
-                </div>
-                <div class="visual">
-                    <i>cloud</i>
-                    <h3>--/11&#176;</h3>
-                </div>
+            <div class="period">
+                <a href="">today</a>
+                <a href="">hourly</a>
+                <a href="">10 days</a>
+                <a href="">weekend</a>
+                <a href="">monthly</a>
+                <a href="">radar</a>
             </div>
-            <div class="today card">
-                <div class="tods">
-                    <div class="tod">
-                        <h3>morning</h3>
-                        <h3>16&#176;</h3>
-                        <i>cloud pic</i>
-                        <h5>rain</h5>
+            <div class="cards">
+                <div class="city card">
+                    <div class="basic-inf">
+                        <h2>city name</h2>
+                        <a href="">bst</a>
+                        <a href="" class="degre">19</a>
+                        <a href="">partly cloudy</a>
+                        <a href="">1% chance of rain until 13:00</a>
                     </div>
-                    <div class="tod">
-                        <h3>afternoon</h3>
-                        <h3>16&#176;</h3>
-                        <i>cloud pic</i>
-                        <h5>rain</h5>
-                    </div>
-                    <div class="tod">
-                        <h3>evening</h3>
-                        <h3>16&#176;</h3>
-                        <i>cloud pic</i>
-                        <h5>rain</h5>
-                    </div>
-                    <div class="tod">
-                        <h3>overnight</h3>
-                        <h3>16&#176;</h3>
-                        <i>cloud pic</i>
-                        <h5>rain</h5>
+                    <div class="visual">
+                        <i>cloud</i>
+                        <h3>--/11&#176;</h3>
                     </div>
                 </div>
-                <a href="">next hours</a>
+                <div class="today card">
+                    <div class="tods">
+                        <div class="tod">
+                            <h3>morning</h3>
+                            <h3>16&#176;</h3>
+                            <i>cloud pic</i>
+                            <h5>rain</h5>
+                        </div>
+                        <div class="tod">
+                            <h3>afternoon</h3>
+                            <h3>16&#176;</h3>
+                            <i>cloud pic</i>
+                            <h5>rain</h5>
+                        </div>
+                        <div class="tod">
+                            <h3>evening</h3>
+                            <h3>16&#176;</h3>
+                            <i>cloud pic</i>
+                            <h5>rain</h5>
+                        </div>
+                        <div class="tod">
+                            <h3>overnight</h3>
+                            <h3>16&#176;</h3>
+                            <i>cloud pic</i>
+                            <h5>rain</h5>
+                        </div>
+                    </div>
+                    <a href="">next hours</a>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
+
     <script src="./app.js"></script>
 </body>
 </html>

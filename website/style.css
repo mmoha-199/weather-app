@@ -1,18 +1,10 @@
 body{
     box-sizing: border-box;
-    z-index: -1;
     color: #ffffff;
     font-family: sans-serif;
     font-size: 16px;
+    z-index: -1;
     margin: 0;
-}
-body a, body i, body button{
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
-}
-body i:hover{
-    color: rgb(223, 151, 126);
 }
 .container{
     display: grid;
@@ -23,6 +15,14 @@ body i:hover{
     "top"
     "mid"
     "but";
+}
+body a, body i, body button{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+body i:hover{
+    color: rgb(223, 151, 126);
 }
 header{
     grid-area: top;
@@ -118,16 +118,19 @@ nav{
 .cards{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    justify-items: center;
     width: 100vw;
     background: linear-gradient(#f69d3c,#ebf8e1,#3f87a6);
 }
 .card{
     display: flex; 
+    width: 100vw;
     border: none;
-    
+    padding: 5px;
+    margin: 10px 5px;
     box-shadow: 0px 0px 6px 0px rgba(121, 119, 119, 0.521); 
     border-radius: 5px;
-    margin: 10px;
 }
 .city{
     flex-direction: row;
@@ -136,12 +139,22 @@ nav{
 .basic-inf{
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 .today{
+    display: flex;
+    flex-direction: column;
     color: black;
     background-color: white;
 }
 .tods{
     display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.tod{
+    display: flex;
     flex-direction: column;
+    width: 25%;
+
 }
