@@ -38,9 +38,7 @@ main{
     width: 100vw;
     display: grid;
     justify-content: center;
-    justify-items: center;   
-    background: linear-gradient(#f69d3c,#ebf8e1,#3f87a6);
-    
+    justify-items: center;      
 }
 footer{
     grid-area: but;
@@ -96,4 +94,7 @@ nav{
     padding: 15px;
     font-size: 1.2em;
     text-transform: capitalize;
+}
+.cards{
+    background: linear-gradient(#f69d3c,#ebf8e1,#3f87a6);
 }
