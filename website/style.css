@@ -146,6 +146,11 @@ nav{
     flex-direction: column;
     width: 50%;
 }
+.visual{
+    padding-left: 40px;
+    padding-top: 15px;
+    text-align: center;
+}
 .today{
     display: flex;
     flex-direction: column;
