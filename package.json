@@ -1,0 +1,29 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "mo-wheather-app",
+  "main": "server.js",
+  "scripts": {
+    "test": "^C",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmoha-199/weather-app.git"
+  },
+  "keywords": [
+    "weather",
+    "app"
+  ],
+  "author": "mohamed ben hamed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmoha-199/weather-app/issues"
+  },
+  "homepage": "https://github.com/mmoha-199/weather-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}

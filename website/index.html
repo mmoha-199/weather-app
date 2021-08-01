@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" type="text/css">
     <title>weather-app</title>
 </head>
@@ -15,76 +15,108 @@
     <div class="container">
         <header>
             <div class="logo">
-                <h2>check weather now <i class="fas fa-cloud-sun"></i></h2>
+                <h2>Wheather Application <i class="fas fa-cloud-sun"></i></h2>
             </div>
-            <nav>
-                <form action="get" class="navform">
-                    <input type="text" placeholder="search city / postcode">
-                    <i class="fas fa-search" id="search-btn"></i>
-                </form>
-                <div class="continent">
-                    <i class="fas fa-globe-africa"></i>
-                    <a href="">GB</a>
-                    <div class="v-divider"></div>
-                    <a href="" class="ForC">C&#176;</a>
-                    <i class="fas fa-caret-down"></i>
-                </div>
-            </nav>
         </header>
         <main>
-            <div class="current-city">
-                <a href="" id="currt-cit"> 22&#176;</a>
-                <div class="v-divider"></div>
-            </div>
-            <div class="period">
-                <a href="">today</a>
-                <a href="">hourly</a>
-                <a href="">10 days</a>
-                <a href="">weekend</a>
-                <a href="">monthly</a>
-                <a href="">radar</a>
-            </div>
-            <div class="cards">
-                <div class="city card">
-                    <div class="basic-inf">
-                        <h2>city name</h2>
-                        <a href="">bst</a>
-                        <a href="" class="degre">19</a>
-                        <a href="">partly cloudy</a>
-                        <a href="">1% chance of rain until 13:00</a>
-                    </div>
-                    <div class="visual">
-                        <i class="fas fa-cloud-sun-rain fa-5x"></i>
-                        <h3>--/11&#176;</h3>
-                    </div>
+            <ul class="current-city">
+                <li><a href="" id="degree">Degrees</a>&#176;</li>
+                <li><a href="" id="currt-cit">City</a></li>
+                <li class="v-divider"></li>
+                <li><a href="" id="country">Country</a></li>
+            </ul>
+            <form action="get" class="navform">
+                <div class ="holder zip">
+                    <label for="zip">Enter Zipcode here</label>
+                    <input type="text" id="zip" placeholder="enter zip code here">
                 </div>
-                <div class="today card">
-                    <div class="tods">
-                        <div class="tod">
-                            <h3>morning</h3>
-                            <h3>16&#176;</h3>
-                            <i class="fas fa-cloud-sun-rain fa-2x"></i>
-                            <h5>rain</h5>
-                        </div>
-                        <div class="tod">
-                            <h3>afternoon</h3>
-                            <h3>16&#176;</h3>
-                            <i class="fas fa-cloud-sun-rain fa-2x"></i>
-                            <h5>rain</h5>
-                        </div>
-                        <div class="tod">
-                            <h3>evening</h3>
-                            <h3>16&#176;</h3>
-                            <i class="fas fa-cloud-sun-rain fa-2x"></i>
-                            <h5>rain</h5>
-                        </div>
+                <div class ="holder feel">
+                    <label for="feelings">How are you feeling today?</label>
+                    <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
+                </div>
+                <button id="generate" type = "submit"> Generate </button>
+            </form>
+            <div class="continent">
+                <i class="fas fa-globe-africa"></i>
+                <a href="" id="currt-count">TN</a>
+                <div class="v-divider"></div>
+                <p>The "Temperature" is with C&#176;</p>
+            </div>
+            <div class ="holder entry">
+                <div class = "title">Most Recent Entry</div>
+                <div id = "entryHolder">
+                    <div class="anim">
+                      Date : <div id = "date"></div> 
                     </div>
-                    <a href="">next hours</a>
+                    <div class="anim">
+                       Temperature : <div id = "temp"></div>
+                    </div>
+                    <div class="anim">
+                       Content :  <div id = "content"></div>
+                    </div>
+                    <div class="anim">
+                        Humidity :  <div id = "humid"></div>
+                    </div>         
+                    <div class="anim">
+                        Pressure :  <div id = "presr"></div>
+                    </div>                   
+                    <div class="anim">
+                        Feels-like :  <div id = "fel-like"></div>
+                    </div>
                 </div>
             </div>
         </main>
+        <footer>
+            <div class="contact" id="contact">
+                <h1>Contact Us</h1>
+                <p>Mohamed Ben Hamed</p>
+                <p>galashiels</p>
+                <div id="tel-pre">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="#">0772x50 x7x6</a>
+                </div>
+                <div id="direct">
+                    <i class="far fa-envelope"></i>
+                    <a href="#">web.it@froxtend.co.uk</a>
+                </div>
+            </div>
+            <div class="refer-link">
+                <ul>
+                    <li>
+                        <a href="#">announcements</a>
+                    </li>
+                    <li>
+                        <a href="#">community</a>
+                    </li>
+                    <li>
+                        <a href="#">safety centre</a>
+                    </li>    
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">resolution centre</a>
+                    </li>
+                    <li>
+                        <a href="#">help &#38; contact</a>
+                    </li>
+                    <li>
+                        <a href="#">site map</a>
+                    </li>    
+                </ul>
+            </div>
+            <div class="med-link">
+                <i class="fab fa-facebook fa-xs"></i>
+                <i class="fab fa-instagram fa-xs"></i>
+                <i class="fab fa-twitter fa-xs"></i>
+                <i class="fab fa-youtube fa-xs"></i>
+                <i class="fab fa-google-plus-g fa-xs"></i>
+                <i class="fab fa-snapchat-ghost fa-xs"></i>
+            </div>
+            <div class="rights">
+                <p>all rights reserved by the author <br><a href="#">mohamed benhamed</a> 2021 &#169;</p>
+            </div>
+        </footer>
     </div>
-
-    <script src="./app.js"></script>
+<script src="./app.js"></script>
 </body>
 </html>

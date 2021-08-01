@@ -1,6 +1,7 @@
+
 body{
     box-sizing: border-box;
-    color: #ffffff;
+    color: #020202;
     font-family: sans-serif;
     font-size: 16px;
     z-index: -1;
@@ -21,16 +22,14 @@ body a, body i, body button{
     text-decoration: none;
     color: inherit;
 }
-body i:hover{
-    color: rgb(223, 151, 126);
-}
+
 header{
     grid-area: top;
     width: 100vw;
     display: flex;
     flex-direction: column;
     margin: 0;   
-    background-color: rgb(195, 73, 243);
+    background-color: rgba(218, 94, 12, 0.979);
 }
 
 main{
@@ -39,41 +38,72 @@ main{
     display: grid;
     justify-content: center;
     justify-items: center;      
+    background: linear-gradient(#f69d3c, #ebf8e1, #3f87a6);
 }
 footer{
     grid-area: but;
+    align-self: end;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100vw;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 20px;
+    background-color: rgb(44, 43, 43);
+    color: white;
+   
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    text-align: center;
-    padding-bottom: 10px;
-}
+
 .logo{
     text-align: center;
+    color: #ebf8e1;
+    font-size: 1.1em;
 }
-.continent{
+.current-city{
     display: flex;
     flex-direction: row;
-    padding: 5px;
-    margin-left: 5px;
-    font-size: 1.2em;
+    list-style: none;
+    text-align: center;
+    width: 100vw;
     
+    background-color: rgb(250, 137, 45);
 }
-.continent i, .continent a{
-    padding: 2px;
-    margin: 2px;
-    padding-top: 2px;
+.current-city a{
+    font-size: 1.2em;
 }
-.continent i:first-of-type{
-    display: none;
+.current-city li{
+    padding: 5px;
+}
+#degree{
+    padding-right: 0px;
+}
+#currt-cit{
+    text-transform: uppercase;
+}
+.v-divider:first-of-type{
+    border-left: 1px solid white;
+    height: 70%;
+}
+.holder{
+    display: flex; 
+    flex-direction: column;
+    width: 94vw;
+    border: none;
+    padding: 5px;
+    margin: 10px 5px;
+    box-shadow: 0px 0px 6px 0px rgba(121, 119, 119, 0.521); 
+    border-radius: 5px;
 }
 .navform{
-    width: 65vw;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
 }
 .navform input{
     width: 95%;
@@ -84,88 +114,276 @@ nav{
     border-radius: 5px;
     margin-left: 5px;
 }
-.navform i{
-    position: absolute;
-    z-index: 2;
-    left: 60%;
-    top: 9%;
-    
-    color: rgba(100, 99, 99, 0.76);
+
+label{
+    padding: 10px 0 10px 0;
 }
 
-.v-divider:first-of-type{
-    border-left: 1px solid white;
-    height: 70%;
+#generate{
+    height: 30px;
+    width: 60%;
+    align-self: center;
+    margin-bottom: 10px;
 }
-.current-city{
+#generate:hover{
+    color: green;
+}
+.continent{
     display: flex;
     flex-direction: row;
-    width: 100vw;
-    padding: 10px;
-    background-color: rgb(195, 119, 240);
-}
-.current-city a{
-    padding-left: 20px;
+    justify-content: space-between;
+    margin-top: 15px;
     font-size: 1.2em;
-}
-.period{
-    display: grid;
-    width: 100vw;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    background-color: rgb(157, 8, 243);
     text-align: center;
+    
 }
-.period a {
-    padding: 15px;
-    font-size: 1.2em;
-    text-transform: capitalize;
-}
-.cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    width: 100vw;
-    background: linear-gradient(#f69d3c,#ebf8e1,#3f87a6);
-}
-.card{
-    display: flex; 
-    width: 94vw;
-    border: none;
+.continent p{
+    font-size: 14px;
     padding: 5px;
-    margin: 10px 5px;
-    box-shadow: 0px 0px 6px 0px rgba(121, 119, 119, 0.521); 
+}
+.continent a,.continent i{
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+.anim{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #ebf8e1;
+    margin: 5px;
     border-radius: 5px;
 }
-.city{
-    flex-direction: row;
-    background: linear-gradient(#ac3cf6,#d3a9e4);
+#date,#temp,#content,#humid,#fel-like,#presr{
+    padding-left: 10px;
 }
-.basic-inf{
+footer a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    transition: color 0.2s;
+}
+footer a:hover{
+    color: rgb(255, 145, 0);
+}
+#direct i{
+    margin: 10px;
+}
+.refer-link{
     display: flex;
     flex-direction: column;
-    width: 50%;
-}
-.visual{
-    padding-left: 40px;
-    padding-top: 15px;
-    text-align: center;
-}
-.today{
-    display: flex;
-    flex-direction: column;
-    color: black;
-    background-color: white;
-}
-.tods{
-    display: flex;
-    flex-direction: row;
     width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
-.tod{
-    display: flex;
-    flex-direction: column;
+.refer-link ul{
+    list-style: none;
+    margin-bottom: 10px;
+    line-height: 30px;
+    padding-left: 0px;
+    -webkit-padding-start: 0;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.med-link{
+    display: block;
+    width: 100%;
     text-align: center;
-    width: 33.33%;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+.med-link i{
+    padding: 5px;
+    cursor: pointer;
+}
+.fa-facebook:hover{
+    color: rgb(63, 63, 190);
+}
+.fa-instagram:hover{ 
+    color: #bc1888;   
+}
+.fa-twitter:hover{
+    color: rgb(104, 104, 230);
+}
+.fa-youtube:hover{
+    color: rgb(223, 18, 46);
+}
+.fa-google-plus-g:hover{
+    color: rgb(190, 72, 63);
+}
+.fa-snapchat-ghost:hover{
+    color: rgb(190, 188, 63);
+}
+.rights{
+    text-align: center;
+}
+.rights p{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.rights p::first-letter, .rights p a{
+    text-transform: capitalize;
+}
+/*481px — 768px: iPads, Tablets*/
+@media  screen and (min-width: 481px) {
+  .current-city li{
+      padding: 0px 20px;
+  }
+  #generate{
+      font-size: 1.2em;
+  }
+  .title{
+      font-size: 1.2em;
+  }
+  .anim{
+      font-size: 1.1em ;
+  }
+}
 
+/*769px — 1024px: Small screens, laptops*/
+@media  screen and (min-width: 700px) {
+    .countainer{
+        width: 700px;
+        max-width: 700px;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto 1fr;
+    }
+    .current-city{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        text-align: center;
+        width: 700px;
+        
+        background-color: rgb(250, 137, 45);
+    }
+    .current-city a{
+        font-size: 1.2em;
+    }
+    .current-city li{
+        padding: 5px;
+    }
+    #degree{
+        padding-right: 0px;
+    }
+    #currt-cit{
+        text-transform: uppercase;
+    }
+    .v-divider:first-of-type{
+        border-left: 1px solid white;
+        height: 70%;
+    }
+    .holder{
+        display: flex; 
+        flex-direction: column;
+        width: 94%;
+        border: none;
+        padding: 5px;
+        margin: 10px 5px;
+        box-shadow: 0px 0px 6px 0px rgba(121, 119, 119, 0.521); 
+        border-radius: 5px;
+    }
+    .navform{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .navform input{
+        width: 95%;
+        font-size: 1.1em;
+        padding: 5px;
+        position: relative;
+        outline: none;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+    label{
+        padding: 10px 0 10px 0;
+    }
+    
+    #generate{
+        height: 30px;
+        width: 60%;
+        align-self: center;
+        margin-bottom: 10px;
+    }
+    #generate:hover{
+        color: green;
+    }
+    .continent{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 15px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .continent p{
+        font-size: 14px;
+        padding: 5px;
+    }
+    .continent a,.continent i{
+        padding: 5px;
+    }
+    .anim{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        background-color: #ebf8e1;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    #date,#temp,#content,#humid,#fel-like,#presr{
+        padding-left: 10px;
+    }
+    .contact{
+        padding-bottom: 10px;
+    }
+    .contact h1{
+        font-size: 1.5em;
+    }
+    .contact p{
+        font-size: 1.1em;
+        letter-spacing: 2px;
+    }
+    .refer-link{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #tel-pre, #eemail{
+        height: 18px;
+    }
+    .refer-link ul{
+        padding-left: 20px;
+        padding-right: 60px;
+    }   
+}
+/*1025px — 1200px: Desktops, large screens*/
+@media only screen and (min-width: 1025px){
+    
+}
+@media only screen and (min-width: 1200px){
+    body p{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+
+    .contact{
+        text-align: left;
+        padding-left: 60px;
+    }
+    .contact p{
+        line-height: 10px;
+        padding: 10px;
+        margin: 5px;
+    }  
 }
